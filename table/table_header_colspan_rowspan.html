@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+        table.table1, table.table2, th, td{
+            width: 600px;
+            height: 50px;
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        td{
+            text-align: left;
+        }
+        th{
+            text-align: right;
+        }
+    </style>
+  </head>
+
+  <body>
+    <table class="table1">
+        <!-- use the first column of each row as header -->
+        <tr>
+          <th>Firstname</th> <!-- header-->
+          <td>Jill</td>
+          <td>Eve</td>
+        </tr>
+        <tr>
+          <th>Lastname</th> <!-- header-->
+          <td>Smith</td>
+          <td>Jackson</td>
+        </tr>
+        <tr>
+          <th>Age</th> <!-- header-->
+          <td>94</td>
+          <td>50</td>
+        </tr>
+      </table>
+      <table class="table2">
+        <caption>patient list</caption> <!-- caption serves as heading for table-->
+        <tr> <!-- header that spans over two or more columns-->
+            <th colspan="2">Name</th>
+            <th>Age</th>
+          </tr>
+          <tr>
+            <td>Jill</td>
+            <td>Smith</td>
+            <td>50</td>
+          </tr>
+          <tr>
+            <td>Eve</td>
+            <td>Jackson</td>
+            <td>94</td>
+          </tr>
+          <table class="table2">
+            <caption>patient list</caption> <!-- caption serves as heading for table-->
+            <tr> <!-- header that spans over two or more columns-->
+                <th>Name</th>
+                <th>Smith</th>
+              </tr>
+              <tr>
+                <td rowspan="2">Phone Number</td>
+                <td>0958325815</td>
+              </tr>
+              <tr>
+                <td>0946578675</td>
+              </tr>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    table { 
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      th, td {
+        text-align: left;
+        padding: 8px;
+      }
+      
+      tr{
+        border-bottom: 1px solid #ddd;
+      }
+      tr:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      } /*Combine Vertical and Horizontal Zebra Stripes->overlapping effect*/
+      th:nth-child(even), td:nth-child(even) {
+        background-color: rgba(150, 212, 212, 0.4);
+      }
+      tr:hover {background-color: #00bdbd;}
+      
+</style>
+<body>
+    
+<h2>Zebra Striped Table</h2>
+<p>zebra-striped table, use the nth-child() and add background-color to all even/odd</p>
+
+<table>
+  <tr>
+  <th>Student</th>
+  <th>Class</th>
+  <th>Fee</th>
+  </tr>
+  <tr>
+  <td>Peter</td>
+  <td>6A</td>
+  <td>$100</td>
+  </tr>
+  <tr>
+  <td>Lois</td>
+  <td>6B</td>
+  <td>$150</td>
+  </tr>
+  <tr>
+  <td>Joe</td>
+  <td>6C</td>
+  <td>$300</td>
+  </tr>
+  <tr>
+  <td>Cleveland</td>
+  <td>6D</td>
+  <td>$250</td>
+  </tr>
+</table>
+</body>
+</html>

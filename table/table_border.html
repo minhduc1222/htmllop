@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        table.table1, th, td{
+            margin-bottom: 5px;
+            margin-top: 5px;
+            border: 1px solid rgb(16, 95, 9);
+            border-radius: 10px;/*round the table*/ /*upon collapse, any effect applied(radius,..) at outermost border will be nullified*/
+        }
+        table.table2,th, td{
+            margin-bottom: 5px;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-collapse: collapse;/*avoid having double borders*/
+        }
+        table.table3, th, td{
+            margin-bottom: 5px;
+            margin-top: 5px;
+            border: 1px solid black;
+            border-style: dashed;/*avoid having double borders*/
+        }
+    </style>
+</head>
+<body>
+    <table class="table1">
+        <tr> 
+            <th>Staff</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <!-- hang 2 -->
+        <tr>
+            <td>Mr A</td>
+            <td>0643614532</td>
+            <td>England</td>
+        </tr>
+        <!-- hang 3 -->
+        <tr>
+            <td>Mr B</td>
+            <td>0543292395</td>
+            <td>Japan</td>
+        </tr>
+    </table>
+    <hr style="margin:0;width:200px;">
+    <table class="table2">
+        <tr> 
+            <th>Staff</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <!-- hang 2 -->
+        <tr>
+            <td>Mr A</td>
+            <td>0643614532</td>
+            <td>England</td>
+        </tr>
+        <!-- hang 3 -->
+        <tr>
+            <td>Mr B</td>
+            <td>0543292395</td>
+            <td>Japan</td>
+        </tr>
+    </table>
+    <hr style="margin:0;width:200px;">
+    <table class="table3">
+        <tr> 
+            <th>Staff</th>
+            <th>contact</th>
+            <th>country</th>
+        </tr>
+        <!-- hang 2 -->
+        <tr>
+            <td>Mr A</td>
+            <td>0643614532</td>
+            <td>England</td>
+        </tr>
+        <!-- hang 3 -->
+        <tr>
+            <td>Mr B</td>
+            <td>0543292395</td>
+            <td>Japan</td>
+        </tr>
+    </table>
+</body>
+</html>

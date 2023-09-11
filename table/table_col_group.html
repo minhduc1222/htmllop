@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      table.table1
+      th,
+      td {
+        border: 1px solid black;
+      }
+      col.col1{
+        background-color: red;
+      }
+      col.col2{
+        background-color: rgb(6, 8, 99);
+      }
+    </style>
+  </head>
+  <body>
+    <table class="table1" style="width: 100%">
+      <!-- hang 1 table row-->
+      <!-- th= table header, td=table data cell element(table cell)-->
+      <caption>
+        Monthly savings
+      </caption>
+      <colgroup>
+        <col class="col1" span="1">
+        <col class="col2" span="1">
+        <col style="background-color: yellow">
+      </colgroup>
+      <tr>
+        <th>Staff</th>
+        <th>contact</th>
+        <th>country</th>
+      </tr>
+      <!-- hang 2 -->
+      <tr>
+        <td>Mr A</td>
+        <td>0643614532</td>
+        <td>England</td>
+      </tr>
+      <!-- hang 3 -->
+      <tr>
+        <td>Mr B</td>
+        <td>0543292395</td>
+        <td>Japan</td>
+      </tr>
+    </table>
+  </body>
+</html>
